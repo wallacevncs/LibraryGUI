@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="431.0" prefWidth="858.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.BookListController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="40.0" prefWidth="121.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="34.0" prefWidth="64.0" text="Books" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+         </children>
+      </HBox>
+      <ToolBar prefHeight="40.0" prefWidth="200.0">
+        <items>
+          <Button fx:id="btNew" mnemonicParsing="false" onAction="#onBtNewAction" text="New" />
+        </items>
+      </ToolBar>
+      <TableView fx:id="tableViewBook" prefHeight="299.0" prefWidth="854.0">
+        <columns>
+          <TableColumn fx:id="tableColumnId" prefWidth="46.0" text="Id" />
+          <TableColumn fx:id="tableColumnBookCode" prefWidth="103.0" text="Book Code" />
+            <TableColumn fx:id="tableColumnTitleBook" prefWidth="213.0" text="Title Book" />
+            <TableColumn fx:id="tableColumnCategory" prefWidth="84.0" text="Category" />
+            <TableColumn fx:id="tableColumnQuantity" prefWidth="70.0" text="Quantity" />
+            <TableColumn fx:id="tableColumnLoans" prefWidth="59.0" text="Loans" />
+            <TableColumn fx:id="tableColumnHistoric" prefWidth="130.0" text="Historic" />
+            <TableColumn fx:id="tableColumnEDIT" prefWidth="75.0" />
+            <TableColumn fx:id="tableColumnREMOVE" prefWidth="75.0" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>
