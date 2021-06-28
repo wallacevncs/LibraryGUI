@@ -139,7 +139,7 @@ public class User {
 
 		try {
 			Gson gson = new GsonBuilder().setPrettyPrinting()
-					.registerTypeAdapter(LocalDate.class, new LocalDateAdapter()).create();
+					    .registerTypeAdapter(LocalDate.class, new LocalDateAdapter()).create();
 			String json = gson.toJson(getHistoric());
 			return json;
 		} catch (Exception ex) {
