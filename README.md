@@ -2,11 +2,11 @@
   Library GUI
 </h1>
 
-
 <p align="center">
-  <a href="#blush-why">About</a> •
-  <a href="#zap-tech-stack">Requirements</a> •
-  <a href="#tophat-license">License</a> 
+  <a href="#speech_balloon-about">About</a> •
+  <a href="#zap-requirements">Requirements</a> •
+   <a href="#running-running">Running</a> •
+  <a href="#page_with_curl-license">License</a> 
 </p>
 
 <p align="center">
@@ -35,10 +35,12 @@ This project is a small management system for a public library, controlling user
 -   [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
 -   [Eclipse IDE](https://www.eclipse.org/downloads/)
 
-## :page_with_curl:License
+## :running: **Running**
+- After installing MySQL Community Server run this [script](https://raw.githubusercontent.com/wallacevncs/LibraryGUI/master/script/libraryScript.sql) in MySQL Workbench.
+
+## :page_with_curl: **License**
 
 This project is under the license [MIT](./LICENSE).
-
 
 
 
